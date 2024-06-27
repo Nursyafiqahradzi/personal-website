@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Website</title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+
+    <body>
+     <header class="header">
+        <link rel="stylesheet"  href="header.css">
+        <nav class="navbar">
+           <a href="index.html">Home</a>
+          <div class="dropdown">
+            <a href="more.html">More</a>
+            <ul class="dropdown-content"></li>
+            <li><a href="quotes.html">Quotes</a></li>
+            <li><a href="myfavoritesong.html">My Favorite Song</a></li>
+           </ul>
+
+         </div>
+          <a href="aboutme.html">About Me</a>
+          <a href="myeducation.html">My Education</a>
+          <a href="myfamily.html">My Family</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="friends.html">Friends</a>
+        </nav>
+     </header>
+<br>
+<br>
+<br>
+<br>
+
+<body style="background-color:#172563;">
+<center><img src="syafiqahs.PNG "width=50% height="100%">
+
+<br>
+<h1 style="color:white; font-family:brush script MT; font-size:500%; text-align:center;">Welcome To My Website</h1>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="1000">
+    <source src="syaa.mp4" type="video/mp4">
+    <source src="syaa.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 1300; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 500; 
+} 
+</script> 
+        </div>
+     </section>
+
+<section class="footer">
+        <p>Copyright &copy; syafiqahhrdzi • All Rights Reserved</p>
+        
+    </section>
+    </body>
+</html>
